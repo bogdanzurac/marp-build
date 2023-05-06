@@ -48,7 +48,7 @@ class FeatureDomainPlugin : Plugin<Project> {
             implementation(versionCatalog.lib("kotlin-coroutines"))
             implementation(versionCatalog.lib("kotlin-datetime"))
 
-            implementation(project("core"))
+            implementation(versionCatalog.lib("marp-core"))
         }
     }
 }

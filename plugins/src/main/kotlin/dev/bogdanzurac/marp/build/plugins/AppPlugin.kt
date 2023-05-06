@@ -69,8 +69,8 @@ class AppPlugin : Plugin<Project> {
             implementation(versionCatalog.lib("kermit"))
             implementation(versionCatalog.lib("koin-compose"))
             implementation(versionCatalog.lib("kotlin-coroutines"))
+            implementation(versionCatalog.lib("marp-core"))
 
-            implementation(project("core"))
             implementation(project("core-data"))
             implementation(project("core-ui"))
         }

@@ -51,7 +51,7 @@ class FeatureDataPlugin : Plugin<Project> {
             implementation(versionCatalog.lib("kotlin-datetime"))
             implementation(versionCatalog.lib("kotlin-serialization"))
 
-            implementation(project("core"))
+            implementation(versionCatalog.lib("marp-core"))
             implementation(project("core-data"))
             implementation(project("core-db"))
             implementation(project("core-ws"))

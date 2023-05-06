@@ -9,7 +9,7 @@ koinKsp = "1.1.1"
 kotlin = "1.8.20"
 ktor = "2.2.3"
 lifecycle = "2.6.0"
-marp = "0.0.2"
+marpPlugins = "0.0.4"
 realm = "1.7.1"
 
 [libraries]
@@ -52,6 +52,9 @@ multiplatform-settings = { module = "com.russhwolf:multiplatform-settings", vers
 realm = { module = "io.realm.kotlin:library-base", version.ref = "realm" }
 store = { module = "org.mobilenativefoundation.store:store5", version = "5.0.0-alpha04" }
 
+# MARP artifacts
+marp-core = { module = "dev.bogdanzurac.marp:core", version = "0.0.1" }
+
 # Plugins
 android-plugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
 kotlin-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
@@ -70,11 +73,11 @@ kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version = "1.8.20-1.0.10" }
 realm = { id = "io.realm.kotlin", version.ref = "realm" }
 serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-marp-app = { id = "dev.bogdanzurac.marp.build.plugins.app", version.ref = "marp" }
-marp-compose = { id = "dev.bogdanzurac.marp.build.plugins.compose", version.ref = "marp" }
-marp-core = { id = "dev.bogdanzurac.marp.build.plugins.core", version.ref = "marp" }
-marp-feature-data = { id = "dev.bogdanzurac.marp.build.plugins.feature.data", version.ref = "marp" }
-marp-feature-domain = { id = "dev.bogdanzurac.marp.build.plugins.feature.domain", version.ref = "marp" }
-marp-feature-ui = { id = "dev.bogdanzurac.marp.build.plugins.feature.ui", version.ref = "marp" }
-marp-koin = { id = "dev.bogdanzurac.marp.build.plugins.koin", version.ref = "marp" }
-marp-publishing = { id = "dev.bogdanzurac.marp.build.plugins.publishing", version.ref = "marp" }
+marp-app = { id = "dev.bogdanzurac.marp.build.plugins.app", version.ref = "marpPlugins" }
+marp-compose = { id = "dev.bogdanzurac.marp.build.plugins.compose", version.ref = "marpPlugins" }
+marp-core = { id = "dev.bogdanzurac.marp.build.plugins.core", version.ref = "marpPlugins" }
+marp-feature-data = { id = "dev.bogdanzurac.marp.build.plugins.feature.data", version.ref = "marpPlugins" }
+marp-feature-domain = { id = "dev.bogdanzurac.marp.build.plugins.feature.domain", version.ref = "marpPlugins" }
+marp-feature-ui = { id = "dev.bogdanzurac.marp.build.plugins.feature.ui", version.ref = "marpPlugins" }
+marp-koin = { id = "dev.bogdanzurac.marp.build.plugins.koin", version.ref = "marpPlugins" }
+marp-publishing = { id = "dev.bogdanzurac.marp.build.plugins.publishing", version.ref = "marpPlugins" }
