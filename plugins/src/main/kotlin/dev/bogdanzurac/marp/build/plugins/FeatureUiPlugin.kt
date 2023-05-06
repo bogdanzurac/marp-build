@@ -12,8 +12,8 @@ class FeatureUiPlugin : Plugin<Project> {
         with(pluginManager) {
             apply("com.android.library")
             apply("org.jetbrains.kotlin.android")
-            apply("dev.bogdanzurac.marp.plugins.compose")
-            apply("dev.bogdanzurac.marp.plugins.koin")
+            apply("dev.bogdanzurac.marp.build.plugins.compose")
+            apply("dev.bogdanzurac.marp.build.plugins.koin")
         }
 
         configureKotlin(JavaVersion.VERSION_11)

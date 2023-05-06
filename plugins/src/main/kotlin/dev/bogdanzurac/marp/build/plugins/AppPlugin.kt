@@ -18,7 +18,7 @@ class AppPlugin : Plugin<Project> {
             apply("com.google.firebase.crashlytics")
             apply("io.realm.kotlin")
             apply("org.jetbrains.kotlin.plugin.serialization")
-            apply("dev.bogdanzurac.marp.plugins.koin")
+            apply("dev.bogdanzurac.marp.build.plugins.koin")
         }
 
         configureKotlin(JavaVersion.VERSION_11)

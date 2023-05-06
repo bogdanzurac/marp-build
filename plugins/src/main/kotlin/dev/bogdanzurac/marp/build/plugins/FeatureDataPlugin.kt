@@ -14,7 +14,7 @@ class FeatureDataPlugin : Plugin<Project> {
             apply("io.realm.kotlin")
             apply("org.jetbrains.kotlin.android")
             apply("org.jetbrains.kotlin.plugin.serialization")
-            apply("dev.bogdanzurac.marp.plugins.koin")
+            apply("dev.bogdanzurac.marp.build.plugins.koin")
         }
 
         configureKotlin(JavaVersion.VERSION_11)

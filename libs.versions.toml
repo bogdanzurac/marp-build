@@ -5,10 +5,11 @@ androidGradlePlugin = "7.4.2"
 androidMinSdk = "26"
 compose = "1.3.3"
 composeKotlinCompiler = "1.4.6"
-lifecycle = "2.6.0"
 koinKsp = "1.1.1"
 kotlin = "1.8.20"
 ktor = "2.2.3"
+lifecycle = "2.6.0"
+marp = "0.0.2"
 realm = "1.7.1"
 
 [libraries]
@@ -53,15 +54,27 @@ store = { module = "org.mobilenativefoundation.store:store5", version = "5.0.0-a
 
 # Plugins
 android-plugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
-crashlytics-plugin = { module = "com.google.firebase:firebase-crashlytics-gradle", version = "2.9.4" }
-google-play-plugin = { module = "com.google.gms:google-services", version = "4.3.15" }
 kotlin-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
-ksp-plugin = { module = "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin", version = "1.8.20-1.0.10" }
-realm-plugin = { module = "io.realm.kotlin:gradle-plugin", version.ref = "realm" }
-serialization-plugin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
 
 [bundles]
 compose = ["androidx-compose-material3", "androidx-compose-material", "androidx-compose-ui", "androidx-compose-ui-preview"]
 lifecycle = ["androidx-lifecycle", "androidx-lifecycle-compose"]
 koin = ["koin-android", "koin-annotations"]
 ktor = ["ktor-content", "ktor-core", "ktor-logging", "ktor-okhttp", "ktor-serialization", "ktor-json"]
+
+[plugins]
+android = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+crashlytics = { id = "com.google.firebase.crashlytics", version = "2.9.4" }
+google-play = { id = "com.google.gms.google-services", version = "4.3.15" }
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version = "1.8.20-1.0.10" }
+realm = { id = "io.realm.kotlin", version.ref = "realm" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+marp-app = { id = "dev.bogdanzurac.marp.build.plugins.app", version.ref = "marp" }
+marp-compose = { id = "dev.bogdanzurac.marp.build.plugins.compose", version.ref = "marp" }
+marp-core = { id = "dev.bogdanzurac.marp.build.plugins.core", version.ref = "marp" }
+marp-feature-data = { id = "dev.bogdanzurac.marp.build.plugins.feature.data", version.ref = "marp" }
+marp-feature-domain = { id = "dev.bogdanzurac.marp.build.plugins.feature.domain", version.ref = "marp" }
+marp-feature-ui = { id = "dev.bogdanzurac.marp.build.plugins.feature.ui", version.ref = "marp" }
+marp-koin = { id = "dev.bogdanzurac.marp.build.plugins.koin", version.ref = "marp" }
+marp-publishing = { id = "dev.bogdanzurac.marp.build.plugins.publishing", version.ref = "marp" }
