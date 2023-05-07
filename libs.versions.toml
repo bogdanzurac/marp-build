@@ -54,6 +54,7 @@ store = { module = "org.mobilenativefoundation.store:store5", version = "5.0.0-a
 
 # MARP artifacts
 marp-core = { module = "dev.bogdanzurac.marp:core", version = "0.0.1" }
+marp-core-auth = { module = "dev.bogdanzurac.marp:core-auth", version = "0.0.1" }
 marp-core-data = { module = "dev.bogdanzurac.marp:core-data", version = "0.0.1" }
 marp-core-db = { module = "dev.bogdanzurac.marp:core-db", version = "0.0.1" }
 marp-core-navigation = { module = "dev.bogdanzurac.marp:core-navigation", version = "0.0.1" }
