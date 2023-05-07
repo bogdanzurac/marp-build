@@ -18,7 +18,7 @@ publishing {
             from(components["versionCatalog"])
             groupId = "dev.bogdanzurac.marp.build"
             artifactId = "libs"
-            version = "0.0.8"
+            version = "0.0.9"
         }
     }
 
