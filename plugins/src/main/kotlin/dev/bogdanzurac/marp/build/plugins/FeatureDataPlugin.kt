@@ -52,9 +52,9 @@ class FeatureDataPlugin : Plugin<Project> {
             implementation(versionCatalog.lib("kotlin-serialization"))
 
             implementation(versionCatalog.lib("marp-core"))
-            implementation(project("core-data"))
-            implementation(project("core-db"))
-            implementation(project("core-ws"))
+            implementation(versionCatalog.lib("marp-core-data"))
+            implementation(versionCatalog.lib("marp-core-db"))
+            implementation(versionCatalog.lib("marp-core-ws"))
         }
     }
 }
