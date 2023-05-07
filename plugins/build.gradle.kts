@@ -12,7 +12,7 @@ dependencies {
 }
 
 group = "dev.bogdanzurac.marp.build"
-version = "0.0.5"
+version = "1.0.0"
 
 gradlePlugin {
     plugins {

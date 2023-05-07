@@ -54,8 +54,8 @@ class FeatureUiPlugin : Plugin<Project> {
             implementation(versionCatalog.lib("kotlin-datetime"))
 
             implementation(versionCatalog.lib("marp-core"))
-            implementation(project("core-navigation"))
-            implementation(project("core-ui"))
+            implementation(versionCatalog.lib("marp-core-navigation"))
+            implementation(versionCatalog.lib("marp-core-ui"))
         }
     }
 }

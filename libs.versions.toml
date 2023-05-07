@@ -9,7 +9,7 @@ koinKsp = "1.1.1"
 kotlin = "1.8.20"
 ktor = "2.2.3"
 lifecycle = "2.6.0"
-marpPlugins = "0.0.5"
+marpPlugins = "1.0.0"
 realm = "1.7.1"
 
 [libraries]
@@ -56,6 +56,9 @@ store = { module = "org.mobilenativefoundation.store:store5", version = "5.0.0-a
 marp-core = { module = "dev.bogdanzurac.marp:core", version = "0.0.1" }
 marp-core-data = { module = "dev.bogdanzurac.marp:core-data", version = "0.0.1" }
 marp-core-db = { module = "dev.bogdanzurac.marp:core-db", version = "0.0.1" }
+marp-core-navigation = { module = "dev.bogdanzurac.marp:core-navigation", version = "0.0.1" }
+marp-core-prompts = { module = "dev.bogdanzurac.marp:core-prompts", version = "0.0.1" }
+marp-core-ui = { module = "dev.bogdanzurac.marp:core-ui", version = "0.0.1" }
 marp-core-ws = { module = "dev.bogdanzurac.marp:core-ws", version = "0.0.1" }
 
 # Plugins

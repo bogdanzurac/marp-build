@@ -72,7 +72,8 @@ class AppPlugin : Plugin<Project> {
 
             implementation(versionCatalog.lib("marp-core"))
             implementation(versionCatalog.lib("marp-core-data"))
-            implementation(project("core-ui"))
+            implementation(versionCatalog.lib("marp-core-navigation"))
+            implementation(versionCatalog.lib("marp-core-ui"))
         }
     }
 
