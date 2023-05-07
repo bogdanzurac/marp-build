@@ -61,6 +61,7 @@ marp-core-navigation = { module = "dev.bogdanzurac.marp:core-navigation", versio
 marp-core-prompts = { module = "dev.bogdanzurac.marp:core-prompts", version = "0.0.1" }
 marp-core-ui = { module = "dev.bogdanzurac.marp:core-ui", version = "0.0.1" }
 marp-core-ws = { module = "dev.bogdanzurac.marp:core-ws", version = "0.0.1" }
+marp-feature-auth-ui = { module = "dev.bogdanzurac.marp:feature-auth-ui", version = "0.0.1" }
 
 # Plugins
 android-plugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
