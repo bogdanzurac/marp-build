@@ -16,7 +16,7 @@ class FeatureUiPlugin : Plugin<Project> {
             apply("dev.bogdanzurac.marp.build.plugins.koin")
         }
 
-        configureKotlin(JavaVersion.VERSION_11)
+        configureKotlin()
 
         android {
             compileSdk = versionCatalog.findVersion("androidCompileSdk").intValue

@@ -14,7 +14,7 @@ class CorePlugin : Plugin<Project> {
             apply("org.jetbrains.kotlin.android")
         }
 
-        configureKotlin(JavaVersion.VERSION_11)
+        configureKotlin()
 
         android {
             compileSdk = versionCatalog.findVersion("androidCompileSdk").intValue

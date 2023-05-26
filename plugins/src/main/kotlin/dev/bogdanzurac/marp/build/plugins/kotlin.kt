@@ -8,7 +8,9 @@ import org.gradle.api.plugins.ExtensionAware
 import org.gradle.api.plugins.JavaPluginExtension
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 
-internal fun Project.configureKotlin(javaVersion: JavaVersion) {
+internal fun Project.configureKotlin() {
+    val javaVersion = JavaVersion.VERSION_17
+
     android {
         // Set JVM targets to the same version, for consistency
         compileOptions {
